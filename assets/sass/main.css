@@ -154,7 +154,7 @@ select {
 aside {
   -webkit-transition: .6s;
   transition: .6s;
-  width: 210px;
+  width: 250px;
   min-height: 100vh;
   background-color: var(--light);
   z-index: 99;
