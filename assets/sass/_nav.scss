@@ -10,3 +10,11 @@ nav {
     }
   }
 }
+header {
+  select {
+    max-width: 100px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
