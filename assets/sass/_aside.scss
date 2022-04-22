@@ -1,0 +1,58 @@
+aside {
+  transition: .6s;
+  width: 210px;
+  min-height: 100vh;
+  background-color: var(--light);
+  ul {
+    margin-top: 20px;
+    li {
+      margin: 10px 0;
+      a {
+        color: var(--dark);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        span {
+          transition: .6s;
+          color: var(--muted);
+        }
+        &.active {
+          background-color: var(--gray);
+          border-radius: 20px 0 0 20px;
+          color: var(--main);
+          span {
+            color: var(--main);
+          }
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            right: 5px;
+            top: 50%;
+            height: 50%;
+            width: 3px;
+            transform: translateY(-50%);
+            background-color: var(--main);
+          }
+        }
+      }
+    }
+  }
+  #toggler {
+    cursor: pointer;
+  }
+}
+aside.closed {
+  transition: .6s;
+  width: 80px;
+  span,.logo {
+    display: none;
+  }
+  .flex {
+    justify-content: center;
+    i {
+      font-size: 1.4rem;
+    }
+  }
+}
