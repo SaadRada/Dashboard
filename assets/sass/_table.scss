@@ -1,0 +1,60 @@
+.table-card {
+  select {
+    width: 100px;
+    box-shadow: none;
+    border: none;
+    &:focus {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  table {
+    tbody {
+      color: var(--dark);
+      font-weight: normal;
+    }
+    td, th {
+      padding: 15px 0;
+    }
+  }
+}
+
+.blue-badge {
+  color: var(--main);
+}
+.green-badge {
+  color: #16C35B;
+}
+.red-badge {
+  color: #E80000;
+}
+.purple-badge  {
+  color: #7000FF;
+}
+.gray-badge  {
+  color: gray;
+}
+.orange-badge  {
+  color: #FF9900;
+}
+
+.products {
+  hr {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 50%;
+    margin: 10px 0;
+  }
+}
+
+.table {
+  overflow-x: scroll;
+}

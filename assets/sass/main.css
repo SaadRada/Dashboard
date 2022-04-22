@@ -204,11 +204,11 @@ nav {
   background-color: var(--light);
 }
 
-nav .search {
+.search {
   position: relative;
 }
 
-nav .search i {
+.search i {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -223,6 +223,11 @@ header select {
 header select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+main {
+  height: calc(100vh - 78px);
+  overflow-y: auto;
 }
 
 main .card-item {
@@ -269,4 +274,79 @@ main .card-item span {
 .animation-4s {
   -webkit-animation: moveToLeft 1.2s ease-in-out;
           animation: moveToLeft 1.2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.table-card select {
+  width: 100px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.table-card select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.table-card table tbody {
+  color: var(--dark);
+  font-weight: normal;
+}
+
+.table-card table td, .table-card table th {
+  padding: 15px 0;
+}
+
+.blue-badge {
+  color: var(--main);
+}
+
+.green-badge {
+  color: #16C35B;
+}
+
+.red-badge {
+  color: #E80000;
+}
+
+.purple-badge {
+  color: #7000FF;
+}
+
+.gray-badge {
+  color: gray;
+}
+
+.orange-badge {
+  color: #FF9900;
+}
+
+.products hr {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+}
+
+.products ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products li {
+  width: 50%;
+  margin: 10px 0;
+}
+
+.table {
+  overflow-x: scroll;
 }

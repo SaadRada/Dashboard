@@ -1,4 +1,6 @@
 main {
+  height: calc(100vh - 78px);
+  overflow-y: auto;
   .card-item {
     background-color: var(--light);
     border-radius: 16px;
@@ -25,3 +27,8 @@ main {
     animation: moveToLeft #{$i* 0.3}s ease-in-out;
   }
 }
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
+
