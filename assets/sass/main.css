@@ -5,6 +5,10 @@
   --gray: #F5F7FB;
   --main: #003AD2;
   --muted: rgba(31, 65, 115, 0.5);
+  --gradient-orange: linear-gradient(to right,#F39034, #FF2727);
+  --gradient-blue: linear-gradient(to right,#003AD2, #0097EC);
+  --gradient-green: linear-gradient(to right,#00A843, #1FD071);
+  --gradient-purple: linear-gradient(to right,#5900C9, #9852F0);
 }
 
 * {
@@ -58,6 +62,26 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+}
+
+.orange-gradient {
+  background: var(--gradient-orange);
+  color: var(--light);
+}
+
+.blue-gradient {
+  background: var(--gradient-blue);
+  color: var(--light);
+}
+
+.green-gradient {
+  background: var(--gradient-green);
+  color: var(--light);
+}
+
+.purple-gradient {
+  background: var(--gradient-purple);
+  color: var(--light);
 }
 
 aside {
@@ -164,4 +188,22 @@ header select {
 header select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+main .card-item {
+  background-color: var(--light);
+  border-radius: 16px;
+  position: relative;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main .card-item .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+main .card-item span {
+  opacity: .7;
 }

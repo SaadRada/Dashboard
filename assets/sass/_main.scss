@@ -1,0 +1,16 @@
+main {
+  .card-item {
+    background-color: var(--light);
+    border-radius: 16px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    span {
+      opacity: .7;
+    }
+  }
+}
