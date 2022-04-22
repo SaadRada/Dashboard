@@ -3,6 +3,10 @@ aside {
   width: 210px;
   min-height: 100vh;
   background-color: var(--light);
+  z-index: 99;
+  .dashboard-title {
+    height: 45px;
+  }
   ul {
     margin-top: 20px;
     li {

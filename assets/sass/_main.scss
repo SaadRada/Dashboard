@@ -4,6 +4,11 @@ main {
     border-radius: 16px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 10px 0;
+    transition: .6s;
+    &:hover {
+      transform: translateY(-5px);
+    }
     .icon {
       position: absolute;
       top: 15px;
@@ -12,5 +17,11 @@ main {
     span {
       opacity: .7;
     }
+  }
+}
+
+@for $i from 1 through 4 {
+  .animation-#{$i}s {
+    animation: moveToLeft #{$i* 0.3}s ease-in-out;
   }
 }

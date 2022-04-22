@@ -7,10 +7,10 @@
   --gray : #F5F7FB;
   --main : #003AD2;
   --muted : rgba(31, 65, 115, 0.5);
-  --gradient-orange : linear-gradient(to right,#F39034, #FF2727);
-  --gradient-blue : linear-gradient(to right,#003AD2, #0097EC);
-  --gradient-green : linear-gradient(to right,#00A843, #1FD071);
-  --gradient-purple : linear-gradient(to right,#5900C9, #9852F0);
+  --gradient-orange : linear-gradient(to left,#FF2727 ,#F39034);
+  --gradient-blue : linear-gradient(to left,#003AD2, #0097EC);
+  --gradient-green : linear-gradient(to left,#00A843, #1FD071);
+  --gradient-purple : linear-gradient(to left,#5900C9, #9852F0);
 }
 
 * {
