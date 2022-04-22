@@ -1,0 +1,12 @@
+nav {
+  background-color: var(--light);
+  .search {
+    position: relative;
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+    }
+  }
+}

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="assets/sass/main.min.css">
   </head>
   <body>
-    <div>
+    <div class="main-section">
+      <!-- sidebar -->
       <aside class="p-3">
         <div class="flex">
           <div class="logo fs-3 fw-bold">Dashboard</div>
@@ -76,12 +77,25 @@
           </li>
         </ul>
       </aside>
-      <nav>
-
-      </nav>
-      <main>
-
-      </main>
+      <div class="flex-auto">
+        <!-- navbar -->
+        <nav class="flex p-3">
+          <div class="search d-none d-md-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="search" placeholder="Search ..." class="form-control">
+          </div>
+          <div class="user-infos flex gap-3">
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-bell"></i>
+            <img src="assets/img/user.png" alt="">
+            <span class="ms-2">Saad Rada</span>
+          </div>
+        </nav>
+        <main>
+  
+        </main>
+      </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -48,6 +48,18 @@ a {
   text-decoration: none;
 }
 
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-auto {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
 aside {
   -webkit-transition: .6s;
   transition: .6s;
@@ -127,4 +139,20 @@ aside.closed .flex {
 
 aside.closed .flex i {
   font-size: 1.4rem;
+}
+
+nav {
+  background-color: var(--light);
+}
+
+nav .search {
+  position: relative;
+}
+
+nav .search i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
 }
