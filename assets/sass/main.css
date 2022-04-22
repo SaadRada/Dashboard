@@ -147,21 +147,11 @@ aside ul li a {
   padding: 10px 20px;
 }
 
-aside ul li a span {
-  -webkit-transition: .6s;
-  transition: .6s;
-  color: var(--muted);
-}
-
 aside ul li a.active {
   background-color: var(--gray);
   border-radius: 20px 0 0 20px;
   color: var(--main);
   position: relative;
-}
-
-aside ul li a.active span {
-  color: var(--main);
 }
 
 aside ul li a.active::after {
@@ -183,7 +173,11 @@ aside #toggler {
 aside.closed {
   -webkit-transition: .6s;
   transition: .6s;
-  width: 80px;
+  width: 60px;
+}
+
+aside.closed a {
+  padding: 10px 0;
 }
 
 aside.closed span, aside.closed .logo {

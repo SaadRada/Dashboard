@@ -17,17 +17,10 @@ aside {
         align-items: center;
         gap: 10px;
         padding: 10px 20px;
-        span {
-          transition: .6s;
-          color: var(--muted);
-        }
         &.active {
           background-color: var(--gray);
           border-radius: 20px 0 0 20px;
           color: var(--main);
-          span {
-            color: var(--main);
-          }
           position: relative;
           &::after {
             position: absolute;
@@ -48,8 +41,11 @@ aside {
   }
 }
 aside.closed {
+  a {
+    padding: 10px 0;
+  }
   transition: .6s;
-  width: 80px;
+  width: 60px;
   span,.logo {
     display: none;
   }
