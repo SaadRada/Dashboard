@@ -3,6 +3,7 @@
     width: 100px;
     box-shadow: none;
     border: none;
+    margin-bottom: 10px;
     &:focus {
       box-shadow: none;
       border: none;
@@ -15,6 +16,7 @@
     }
     td, th {
       padding: 15px 0;
+      color: var(--dark);
     }
   }
 }
@@ -39,6 +41,10 @@
 }
 
 .products {
+  img {
+    width: 50px;
+    height: auto;
+  }
   hr {
     width: 80%;
     margin: auto;

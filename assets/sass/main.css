@@ -11,6 +11,18 @@
   --gradient-purple: linear-gradient(to left,#5900C9, #9852F0);
 }
 
+.dark {
+  --dark: #FFFFFF;
+  --light: #1E293B;
+  --gray: #000;
+  --main: #003AD2;
+  --muted: rgba(31, 65, 115, 0.5);
+  --gradient-orange: linear-gradient(to left,#FF2727 ,#F39034);
+  --gradient-blue: linear-gradient(to left,#003AD2, #0097EC);
+  --gradient-green: linear-gradient(to left,#00A843, #1FD071);
+  --gradient-purple: linear-gradient(to left,#5900C9, #9852F0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,22 +78,47 @@ a {
 
 .orange-gradient {
   background: var(--gradient-orange);
-  color: var(--light);
+  color: #FFF;
 }
 
 .blue-gradient {
   background: var(--gradient-blue);
-  color: var(--light);
+  color: #FFF;
 }
 
 .green-gradient {
   background: var(--gradient-green);
-  color: var(--light);
+  color: #FFF;
 }
 
 .purple-gradient {
   background: var(--gradient-purple);
-  color: var(--light);
+  color: #FFF;
+}
+
+input {
+  background: none !important;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--main);
+}
+
+input:-ms-input-placeholder {
+  color: var(--main);
+}
+
+input::-ms-input-placeholder {
+  color: var(--main);
+}
+
+input::placeholder {
+  color: var(--main);
+}
+
+select {
+  background-color: transparent !important;
+  color: var(--dark) !important;
 }
 
 @-webkit-keyframes moveToLeft {
@@ -280,6 +317,7 @@ main .card-item span {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+  margin-bottom: 10px;
 }
 
 .table-card select:focus {
@@ -295,6 +333,7 @@ main .card-item span {
 
 .table-card table td, .table-card table th {
   padding: 15px 0;
+  color: var(--dark);
 }
 
 .blue-badge {
@@ -319,6 +358,11 @@ main .card-item span {
 
 .orange-badge {
   color: #FF9900;
+}
+
+.products img {
+  width: 50px;
+  height: auto;
 }
 
 .products hr {
